@@ -1,0 +1,423 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    transition: all 0.2s;
+    background-color: rgb(255, 255, 255);
+}
+
+#container-navbar {
+    overflow: hidden;
+}
+
+#btn-in-small {
+    display: none;
+}
+
+#btn-in-wide {
+    color: rgb(168, 168, 168);
+    width: fit-content;
+    text-align: center;
+}
+
+#btn-in-wide:hover {
+    color: black;
+    width: fit-content;
+}
+
+#nav-list {
+    justify-content: center;
+    width: 40%;
+    color: aliceblue;
+}
+
+.navbar-nav li {
+    margin-left: 1vw;
+}
+
+.navbar-nav li a {
+    color: rgb(168, 168, 168);
+    transition: all 0.3s;
+    border-radius: 5px;
+    width: 4vw;
+    text-align: center;
+}
+
+.navbar-nav li a:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.search-bar {
+    width: 35vw;
+    margin-right: 7vw;
+}
+
+.search-bar img{
+    margin-left: 1vw;
+}
+
+.search-bar img:hover{
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    z-index: 20;
+}
+
+.nav-inactive-color {
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.nav-active-color {
+    padding: 2vh;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.nav-shadow {
+    background-color: antiquewhite;
+    padding: 2vh;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.presentation {
+    margin-top: 6vh;
+    display: flex;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 9vh 15vh;
+}
+
+.info-text h1 {
+    margin-bottom: 3vh;
+}
+
+#trabajos-btn {
+    width: fit-content;
+    align-self: center;
+    padding: 2vh 6vh;
+    transition: all 0.2s;
+}
+
+#trabajos-btn:hover {
+    color: aliceblue;
+}
+
+#trabajos-btn:active {
+    color: aliceblue;
+    background-color: rgb(12, 160, 190);
+    border-color: rgb(13, 202, 240);
+}
+
+#carousel {
+    overflow: hidden;
+    padding: 5vh;
+    width: 45vw;
+}
+
+.more {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    background-color: #faebd7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24'%3E%3Cg fill='%23c4b4a0' fill-opacity='0.20'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.info-text-more {
+    text-align: center;
+    margin: 15vh 25vw;
+    margin-bottom: 10vh;
+}
+
+#paintings-info {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.col {
+    transition: all 0.2s;
+    text-align: center;
+    width: 20vw;
+}
+
+
+
+@media screen  and (max-width: 1441px){
+    .presentation {
+        margin-top: 1vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        align-items: center;
+        height: fit-content;
+    }
+    
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 10vh 9vh;
+        margin-bottom: 4vh;
+    }
+    
+    .info-text h1 {
+        margin-bottom: 2vh;
+    }
+    
+    #trabajos-btn {
+        width: fit-content;
+        align-self: center;
+        padding: 2vh 5vh;
+        transition: all 0.2s;
+    }
+    
+    #trabajos-btn:hover {
+        padding: 3vh 7vh;
+        color: aliceblue;
+    }
+    
+    #trabajos-btn:active {
+        margin-top: 1vh;
+        padding: 1vh 5vh;
+        color: aliceblue;
+        background-color: rgb(12, 160, 190);
+        border-color: rgb(13, 202, 240);
+    }
+    
+    
+    
+    #carousel {
+        padding: 5vh;
+        width: 60vw;
+    }
+}
+
+@media screen  and (max-width: 1025px){
+
+    #btn-in-wide{
+        width: 20vw;
+
+    }
+
+    .search-bar{
+        width: 80%;
+        margin-left: 5vw;
+    }
+    
+
+    .presentation {
+        margin-top: 5vh;
+        display: flex;
+        height: 84vh;
+    }
+    
+    
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 5vh 3vh;
+        margin-bottom: 3vh;
+        font-size: 1.6vh;
+    }
+    
+    
+    #carousel {
+        padding: 2vh;
+        width: 50vw;
+    }
+
+    
+    .info-text-more {
+        text-align: center;
+        margin: 5vh 15vw;
+        margin-bottom: 10vh;
+        font-size: 2vh;
+    }
+
+    .col {
+        transition: all 0.2s;
+        text-align: center;
+        width: 30vw;
+    }
+}
+
+@media screen  and (max-width: 992px){
+    #btn-in-small{
+        display: block;
+        width: fit-content;
+    }
+    
+    #btn-in-wide{
+        display: none;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-left: 0vh;
+    }
+}
+
+@media screen  and (max-width: 769px){
+    #search-bar {
+        width: 100%;
+        margin-left: 0vh;
+    }
+
+    .presentation {
+        margin-top: 9vh;
+        display: flex;
+        height: fit-content;
+        margin-bottom: 5vh;
+    }
+    
+    
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 1vh 2vh;
+        margin-bottom: 3vh;
+        font-size: 1.5vh;
+    }
+
+    #trabajos-btn {
+        display: none;
+    }
+    
+    
+    #carousel {
+        padding: 2vh;
+        width: 60vw;
+    }
+
+    .more {
+        display: flex;
+        height: fit-content;
+
+        align-items: flex-start;
+        background-color: antiquewhite;
+    }
+
+    
+    .info-text-more {
+        text-align: center;
+
+        margin-bottom: 7vh;
+        font-size:2vh;
+    }
+
+    .col {
+        transition: all 0.2s;
+        text-align: center;
+        width: 32vw;
+    }
+}
+
+@media screen  and (max-width: 426px){
+
+    .presentation {
+        margin-top: 9vh;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-bottom: 5vh;
+    }
+    
+    
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin: 0vh;
+        width: 80vw;
+        margin-bottom: 3vh;
+        font-size: 1.5vh;
+    }
+
+    #trabajos-btn {
+        display: none;
+    }
+    
+    
+    #carousel {
+        padding: 0vh;
+        width: 70vw;
+    }
+
+    .more {
+        display: flex;
+        height: fit-content;
+        align-items: flex-start;
+        background-color: antiquewhite;
+    }
+
+    #paintings-info {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10vh;
+    }
+
+    .info-more{
+        overflow: hidden;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width:60vw;
+        align-self: center;
+    }
+
+    .card-body {
+        align-self: center;
+    }
+
+
+    .info-text-more {
+        text-align: center;
+        margin-top: 14vh;
+        margin-bottom: 7vh;
+        font-size:1.5vh;
+    }
+
+    .col {
+        margin-left: 0vh;
+        transition: all 0.2s;
+        text-align: center;
+        width: fit-content;
+    }
+}
+
+
+
+

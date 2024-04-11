@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Grupo Cero</title>
+</head>
+<body>
+
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav-all">
+        <div class="container-fluid" id="container-navbar">
+    
+            <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" width="70px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#more">Obras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" href="#ContactToggle" id="btn-contact">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" data-bs-toggle="modal" href="#ModalToggle" id="btn-in-small">Iniciar sesion</a>
+                    </li>
+                </ul>
+    
+                <form class="d-flex search-bar" role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <img src="./assets/img/search.svg" width="25px">
+                </form>
+    
+                <div class="modal fade" id="ContactToggle" aria-hidden="true" aria-labelledby="ModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalToggleLabel">Contacto</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"><p>Te interesa comprar o tienes una duda</p></div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="InputName2" class="form-label">Nombre</label>
+                                        <input type="name" class="form-control" id="InputName2" aria-describedby="nameHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="InputEmail2" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="InputEmail1">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="InputMessage" class="form-label">Mensaje</label>
+                                        <textarea class="form-control" id="InputMessage" rows="4"></textarea>
+                                    </div>
+                                </form>                       
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="modal fade" id="ModalToggle" aria-hidden="true" aria-labelledby="ModalToggleLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="ModalToggleLabel">Iniciar sesión</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="InputEmail1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="InputPassword1" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control" id="InputPassword1">
+                                        <a id="passwordHelp" class="form-text" href="https://i.kym-cdn.com/photos/images/newsfeed/002/496/274/edc.png">Olvidé mi contraseña</a>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Recordarme</label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./logged.html"><button type="submit" class="btn btn-primary">Iniciar sesión</button></a>
+                                <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" id="registrarse-btn">Registrarse</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalToggleLabel2">Registrarse</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+                                        <input type="name" class="form-control" aria-describedby="emailHelp">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                                        <input type="email" class="form-control" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico.</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Repetir contraseña</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="mb-3 form-check"></div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">volver</button>
+                                <button class="btn btn-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" id="registrarse-btn">Registrarse</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <a class="nav-link" data-bs-toggle="modal" href="#ModalToggle" id="btn-in-wide">Iniciar sesión</a>
+            </div>
+        </div>
+    
+    </nav>    
+    <!--nav bar-->
+    
+
+    <!--presentacion-->
+    <section class="presentation" id="presentacion">
+        <!--info-->
+        <div class="info">
+            <div class="info-text">
+                <h1>Presentacion</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu scelerisque felis imperdiet proin fermentum leo. Mauris a diam maecenas sed enim ut sem viverra. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Nunc sed id semper risus in hendrerit. Diam maecenas sed enim ut sem. Morbi blandit cursus risus at ultrices. Phasellus faucibus scelerisque eleifend donec. Purus in massa tempor nec feugiat nisl. Id diam maecenas ultricies mi eget.</p>
+            </div>
+    
+            <a type="button" class="btn btn-outline-info" id="trabajos-btn" href="#more">mas</a>
+        </div>
+        <!--info-->
+    
+        <!--slider-->
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-item active">
+                <a href="./01-paint-info.html"><img src="./assets/img/volcano.PNG" class="d-block w-100 pintura-inicio" alt="volcano"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="./02-paint-info.html"><img src="./assets/img/wizard.PNG" class="d-block w-100 pintura-inicio" alt="wizard"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="./03-paint-info.html"><img src="./assets/img/skull.PNG" class="d-block w-100 pintura-inicio" alt="skull"></a>
+            </div>
+        </div>
+        <!--slider-->
+    </section>
+    <!--presentacion-->
+
+    <!--nuestro trabajo-->
+    <section class="more" id="more">
+
+        <div class="info-more">
+            <div class="info-text-more">
+                <H1>Nuestros trabajos</H1>
+                <p>Diam maecenas sed enim ut sem. Morbi blandit cursus risus at ultrices. Phasellus faucibus scelerisque eleifend donec. Purus in massa tempor nec feugiat nisl. Id diam maecenas ultricies mi eget.</p>
+            </div>
+
+        <div class="row row-cols-1 row-cols-md-5 g-4" id="paintings-info">
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/volcano.PNG" class="card-img-top" id="card-paint" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"Volcano"</h5>
+                        <a href="./01-paint-info.html" class="btn btn-primary">más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/wizard.PNG" class="card-img-top" id="card-paint" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"Evil wizard"</h5>
+                        <a href="./02-paint-info.html" class="btn btn-primary">más información</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./assets/img/skull.PNG" class="card-img-top" id="card-paint" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"The skull sued me"</h5>
+                        <a href="./03-paint-info.html" class="btn btn-primary">más información</a>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+        
+    </section>
+    <!--nuestro trabajo-->
+
+    <!--Footer-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+    
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="./assets/img/logo.png" width="90px">
+            </a>
+    
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com"><img src="./assets/img/instagram (1).svg" width="25px"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/"><img src="./assets/img/twitter-x.svg" width="25px"></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/"><img src="./assets/img/facebook.svg" width="25px"></a></li>
+            </ul>
+        </footer>
+    </div>
+    
+    <!--Footer-->
+
+
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+
+</body>
+</html>
